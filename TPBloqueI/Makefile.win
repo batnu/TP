@@ -1,0 +1,36 @@
+# Project: TPBloqueI
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe -D__DEBUG__
+CC   = gcc.exe -D__DEBUG__
+WINDRES = windres.exe
+RES  = 
+OBJ  = MisObjetos/TPBloqueI.o MisObjetos/EnterosAleatorios.o MisObjetos/Array.o $(RES)
+LINKOBJ  = MisObjetos/TPBloqueI.o MisObjetos/EnterosAleatorios.o MisObjetos/Array.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib"  -g3 -fmessage-length=0 
+INCS =  -I"C:/Dev-Cpp/include"  -I"E:/Pedro/TPBloqueII/MisIncludes"  -I"E:/Pedro/TPBloqueI/MisIncludes" 
+CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include"  -I"E:/Pedro/TPBloqueI/MisIncludes" 
+BIN  = MisEjecutables/TPBloqueI.exe
+CXXFLAGS = $(CXXINCS)   -std=c99 -fexpensive-optimizations -O1 -g3 -fmessage-length=0
+CFLAGS = $(INCS) -std=c99   -std=c99 -fexpensive-optimizations -O1 -g3 -fmessage-length=0
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before MisEjecutables/TPBloqueI.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o "MisEjecutables\TPBloqueI.exe" $(LIBS)
+
+MisObjetos/TPBloqueI.o: TPBloqueI.c
+	$(CC) -c TPBloqueI.c -o MisObjetos/TPBloqueI.o $(CFLAGS)
+
+MisObjetos/EnterosAleatorios.o: EnterosAleatorios.c
+	$(CC) -c EnterosAleatorios.c -o MisObjetos/EnterosAleatorios.o $(CFLAGS)
+
+MisObjetos/Array.o: Array.c
+	$(CC) -c Array.c -o MisObjetos/Array.o $(CFLAGS)

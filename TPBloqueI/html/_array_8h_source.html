@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.3.1"/>
+<title>TPBloqueI: Fichero Fuente Array.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">TPBloqueI
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.3.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Estructuras&#160;de&#160;Datos</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Globales</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Array.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_array_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __ARRAY_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define __ARRAY_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">void</span> * Array;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;Array <a class="code" href="_array_8c.html#a5b860853d13fd04757639c35e1f9b2a4" title="Crea y devuelve un array de tamaño n = lsup-linf+1 con los números enteros comprendidos entre los lím...">ArrayCreaAleatorio</a>(<span class="keywordtype">int</span> linf, <span class="keywordtype">int</span> lsup);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_array_8c.html#ac98ec263008623aabd476bfd841ca55f" title="Destruye el array a.">ArrayLibera</a>(Array a);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_array_8c.html#ab9490b9b6562a9f690651ef64a6c1592" title="Imprime por pantalla el array a con formato: Array: a_1 a_2 . . . a_n Por ejemplo, el array {4,6,3,5} se imprimiría como: Array: 4 6 3 5.">ArrayImprime</a>(Array a);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;Array <a class="code" href="_array_8c.html#a4ae6bbec0e6e148f10a65fd8a4aa1f90" title="Crea y devuelve un array cuyos elementos han sido leidos desde un fichero de texto con descriptor de ...">ArrayCreaFichero</a>(FILE * f);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_array_8c.html#a262b555730ec304946b55ef4e1c14ba7" title="Imprime en el fichero de texto con descriptor de fichero f los elementos de un array dinamico con el ...">ArrayImprimeFichero</a>(Array a, FILE * f);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;Array <a class="code" href="_array_8c.html#ac57f779c600ce549cace1fc3a5677900" title="Crea y devuelve un array de tamaño n con sus elementos inicializados a cero e indexados desde 1 hasta...">ArrayCrea</a>(<span class="keywordtype">int</span> n);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;Array <a class="code" href="_array_8c.html#a68d63cfa76638fbe229ae3818c79a251" title="Crea y devuelve un subarray del array a comprendido entre los índices i y j.">ArrayCreaSubarray</a>(Array a, <span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_array_8c.html#ad9d77c7eb700591581f5573399cd630e" title="Devuelve el tamaño del array a.">ArrayTam</a>(Array a);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_array_8c.html#a802cf7324310686a62588c5feecf631d" title="Asigna el entero e en el índice i del array a.">ArrayAsigna</a>(Array a, <span class="keywordtype">int</span> i, <span class="keywordtype">int</span> e);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_array_8c.html#ac99562d37f146243894d783998f3148d" title="Devuelve el entero e que ocupa el índice i del array a.">ArrayRecupera</a>(Array a, <span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_array_8c.html#a920de230a9211686e711cd68180ecc7f" title="Ordena de forma creciente los elementos del array a en O(n^2) o inferior, donde n es ArrayTam(a)...">ArrayOrdena</a>(Array a);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_array_8c.html#a19765ddb84d15a00872f85923a050f11" title="Comprueba si hay algun error al leer de un fichero y si no hay error lee los enteros.">leeEnteroError</a>(<span class="keywordtype">char</span> * file, <span class="keywordtype">int</span> * n);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Miércoles, 10 de Abril de 2013 15:16:55 para TPBloqueI por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.3.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,499 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.3.1"/>
+<title>TPBloqueI: Referencia del Archivo Array.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">TPBloqueI
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.3.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Estructuras&#160;de&#160;Datos</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Globales</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Estructuras de datos</a> &#124;
+<a href="#typedef-members">'typedefs'</a> &#124;
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo Array.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Módulo con funciones para manejo de array.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br/>
+<code>#include &lt;stdio.h&gt;</code><br/>
+<code>#include &quot;<a class="el" href="_array_8h_source.html">Array.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="_enteros_aleatorios_8h_source.html">EnterosAleatorios.h</a>&quot;</code><br/>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Estructuras de datos</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_array_rep.html">ArrayRep</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+'typedefs'</h2></td></tr>
+<tr class="memitem:a922440d5c30b05dd664a254db5607bf9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a922440d5c30b05dd664a254db5607bf9"></a>
+typedef <a class="el" href="struct_array_rep.html">ArrayRep</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_array_8c.html#a922440d5c30b05dd664a254db5607bf9">ArrayAp</a></td></tr>
+<tr class="memdesc:a922440d5c30b05dd664a254db5607bf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">ArrayAp structure. <br/></td></tr>
+<tr class="separator:a922440d5c30b05dd664a254db5607bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a5b860853d13fd04757639c35e1f9b2a4"><td class="memItemLeft" align="right" valign="top">Array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_array_8c.html#a5b860853d13fd04757639c35e1f9b2a4">ArrayCreaAleatorio</a> (int linf, int lsup)</td></tr>
+<tr class="memdesc:a5b860853d13fd04757639c35e1f9b2a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crea y devuelve un array de tamaño n = lsup-linf+1 con los números enteros comprendidos entre los límites linf y lsup, asignados al array de forma aleatoria. El array contendrá finalmente una permutación con los números enteros comprendidos entre dichos límites.  <a href="#a5b860853d13fd04757639c35e1f9b2a4">Más...</a><br/></td></tr>
+<tr class="separator:a5b860853d13fd04757639c35e1f9b2a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac98ec263008623aabd476bfd841ca55f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_array_8c.html#ac98ec263008623aabd476bfd841ca55f">ArrayLibera</a> (Array a)</td></tr>
+<tr class="memdesc:ac98ec263008623aabd476bfd841ca55f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruye el array a.  <a href="#ac98ec263008623aabd476bfd841ca55f">Más...</a><br/></td></tr>
+<tr class="separator:ac98ec263008623aabd476bfd841ca55f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9490b9b6562a9f690651ef64a6c1592"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_array_8c.html#ab9490b9b6562a9f690651ef64a6c1592">ArrayImprime</a> (Array a)</td></tr>
+<tr class="memdesc:ab9490b9b6562a9f690651ef64a6c1592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imprime por pantalla el array a con formato: Array: a_1 a_2 . . . a_n Por ejemplo, el array {4,6,3,5} se imprimiría como: Array: 4 6 3 5.  <a href="#ab9490b9b6562a9f690651ef64a6c1592">Más...</a><br/></td></tr>
+<tr class="separator:ab9490b9b6562a9f690651ef64a6c1592"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ae6bbec0e6e148f10a65fd8a4aa1f90"><td class="memItemLeft" align="right" valign="top">Array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_array_8c.html#a4ae6bbec0e6e148f10a65fd8a4aa1f90">ArrayCreaFichero</a> (FILE *f)</td></tr>
+<tr class="memdesc:a4ae6bbec0e6e148f10a65fd8a4aa1f90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crea y devuelve un array cuyos elementos han sido leidos desde un fichero de texto con descriptor de fichero f. Req: El formato del fichero de lectura es el siguiente: n v_1 v_2 . . . v_n con n&gt;0. Por ejemplo, el array {4,6,3,5} estaria en el fichero como: 4 4 6 3 5.  <a href="#a4ae6bbec0e6e148f10a65fd8a4aa1f90">Más...</a><br/></td></tr>
+<tr class="separator:a4ae6bbec0e6e148f10a65fd8a4aa1f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a262b555730ec304946b55ef4e1c14ba7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_array_8c.html#a262b555730ec304946b55ef4e1c14ba7">ArrayImprimeFichero</a> (Array a, FILE *f)</td></tr>
+<tr class="memdesc:a262b555730ec304946b55ef4e1c14ba7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imprime en el fichero de texto con descriptor de fichero f los elementos de un array dinamico con el siguiente formato: n v_1 v_2 . . . v_n Por ejemplo, el array {4,6,3,5} se imprimiria como: 4 4 6 3 5.  <a href="#a262b555730ec304946b55ef4e1c14ba7">Más...</a><br/></td></tr>
+<tr class="separator:a262b555730ec304946b55ef4e1c14ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac57f779c600ce549cace1fc3a5677900"><td class="memItemLeft" align="right" valign="top">Array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_array_8c.html#ac57f779c600ce549cace1fc3a5677900">ArrayCrea</a> (int n)</td></tr>
+<tr class="memdesc:ac57f779c600ce549cace1fc3a5677900"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crea y devuelve un array de tamaño n con sus elementos inicializados a cero e indexados desde 1 hasta n.  <a href="#ac57f779c600ce549cace1fc3a5677900">Más...</a><br/></td></tr>
+<tr class="separator:ac57f779c600ce549cace1fc3a5677900"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68d63cfa76638fbe229ae3818c79a251"><td class="memItemLeft" align="right" valign="top">Array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_array_8c.html#a68d63cfa76638fbe229ae3818c79a251">ArrayCreaSubarray</a> (Array a, int i, int j)</td></tr>
+<tr class="memdesc:a68d63cfa76638fbe229ae3818c79a251"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crea y devuelve un subarray del array a comprendido entre los índices i y j.  <a href="#a68d63cfa76638fbe229ae3818c79a251">Más...</a><br/></td></tr>
+<tr class="separator:a68d63cfa76638fbe229ae3818c79a251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9d77c7eb700591581f5573399cd630e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_array_8c.html#ad9d77c7eb700591581f5573399cd630e">ArrayTam</a> (Array a)</td></tr>
+<tr class="memdesc:ad9d77c7eb700591581f5573399cd630e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devuelve el tamaño del array a.  <a href="#ad9d77c7eb700591581f5573399cd630e">Más...</a><br/></td></tr>
+<tr class="separator:ad9d77c7eb700591581f5573399cd630e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a802cf7324310686a62588c5feecf631d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_array_8c.html#a802cf7324310686a62588c5feecf631d">ArrayAsigna</a> (Array a, int i, int e)</td></tr>
+<tr class="memdesc:a802cf7324310686a62588c5feecf631d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asigna el entero e en el índice i del array a.  <a href="#a802cf7324310686a62588c5feecf631d">Más...</a><br/></td></tr>
+<tr class="separator:a802cf7324310686a62588c5feecf631d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac99562d37f146243894d783998f3148d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_array_8c.html#ac99562d37f146243894d783998f3148d">ArrayRecupera</a> (Array a, int i)</td></tr>
+<tr class="memdesc:ac99562d37f146243894d783998f3148d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devuelve el entero e que ocupa el índice i del array a.  <a href="#ac99562d37f146243894d783998f3148d">Más...</a><br/></td></tr>
+<tr class="separator:ac99562d37f146243894d783998f3148d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a920de230a9211686e711cd68180ecc7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_array_8c.html#a920de230a9211686e711cd68180ecc7f">ArrayOrdena</a> (Array a)</td></tr>
+<tr class="memdesc:a920de230a9211686e711cd68180ecc7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ordena de forma creciente los elementos del array a en O(n^2) o inferior, donde n es ArrayTam(a).  <a href="#a920de230a9211686e711cd68180ecc7f">Más...</a><br/></td></tr>
+<tr class="separator:a920de230a9211686e711cd68180ecc7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19765ddb84d15a00872f85923a050f11"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_array_8c.html#a19765ddb84d15a00872f85923a050f11">leeEnteroError</a> (char *file, int *n)</td></tr>
+<tr class="memdesc:a19765ddb84d15a00872f85923a050f11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comprueba si hay algun error al leer de un fichero y si no hay error lee los enteros.  <a href="#a19765ddb84d15a00872f85923a050f11">Más...</a><br/></td></tr>
+<tr class="separator:a19765ddb84d15a00872f85923a050f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Módulo con funciones para manejo de array. </p>
+<dl class="section author"><dt>Autor</dt><dd>Antonio Sánchez López </dd></dl>
+<dl class="section version"><dt>Versión</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Fecha</dt><dd>2013 </dd></dl>
+</div><h2 class="groupheader">Documentación de las funciones</h2>
+<a class="anchor" id="a802cf7324310686a62588c5feecf631d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ArrayAsigna </td>
+          <td>(</td>
+          <td class="paramtype">Array&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Asigna el entero e en el índice i del array a. </p>
+<dl class="section pre"><dt>Precondición</dt><dd>1&lt;=i&lt;=ArrayTam(a) </dd></dl>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>El array. </td></tr>
+    <tr><td class="paramname">i</td><td>Indice. </td></tr>
+    <tr><td class="paramname">e</td><td>Numero entero. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac57f779c600ce549cace1fc3a5677900"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Array ArrayCrea </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crea y devuelve un array de tamaño n con sus elementos inicializados a cero e indexados desde 1 hasta n. </p>
+<dl class="section post"><dt>Postcondición</dt><dd>n&gt;0 </dd></dl>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Tamaño del array. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a5b860853d13fd04757639c35e1f9b2a4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Array ArrayCreaAleatorio </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>linf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lsup</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crea y devuelve un array de tamaño n = lsup-linf+1 con los números enteros comprendidos entre los límites linf y lsup, asignados al array de forma aleatoria. El array contendrá finalmente una permutación con los números enteros comprendidos entre dichos límites. </p>
+<dl class="section pre"><dt>Precondición</dt><dd>linf&lt;=lsup </dd></dl>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">linf</td><td>limite inferior </td></tr>
+    <tr><td class="paramname">lsup</td><td>limite superior </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a4ae6bbec0e6e148f10a65fd8a4aa1f90"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Array ArrayCreaFichero </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crea y devuelve un array cuyos elementos han sido leidos desde un fichero de texto con descriptor de fichero f. Req: El formato del fichero de lectura es el siguiente: n v_1 v_2 . . . v_n con n&gt;0. Por ejemplo, el array {4,6,3,5} estaria en el fichero como: 4 4 6 3 5. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>El fichero. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a68d63cfa76638fbe229ae3818c79a251"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Array ArrayCreaSubarray </td>
+          <td>(</td>
+          <td class="paramtype">Array&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>j</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crea y devuelve un subarray del array a comprendido entre los índices i y j. </p>
+<dl class="section pre"><dt>Precondición</dt><dd>1&lt;=i&lt;=j&lt;=ArrayTam(a) </dd></dl>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>El array. </td></tr>
+    <tr><td class="paramname">i</td><td>Limite inferior </td></tr>
+    <tr><td class="paramname">j</td><td>Limite superior </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab9490b9b6562a9f690651ef64a6c1592"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ArrayImprime </td>
+          <td>(</td>
+          <td class="paramtype">Array&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Imprime por pantalla el array a con formato: Array: a_1 a_2 . . . a_n Por ejemplo, el array {4,6,3,5} se imprimiría como: Array: 4 6 3 5. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>El array. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a262b555730ec304946b55ef4e1c14ba7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ArrayImprimeFichero </td>
+          <td>(</td>
+          <td class="paramtype">Array&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>f</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Imprime en el fichero de texto con descriptor de fichero f los elementos de un array dinamico con el siguiente formato: n v_1 v_2 . . . v_n Por ejemplo, el array {4,6,3,5} se imprimiria como: 4 4 6 3 5. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>El array. </td></tr>
+    <tr><td class="paramname">f</td><td>El fichero. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac98ec263008623aabd476bfd841ca55f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ArrayLibera </td>
+          <td>(</td>
+          <td class="paramtype">Array&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destruye el array a. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>El array. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a920de230a9211686e711cd68180ecc7f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ArrayOrdena </td>
+          <td>(</td>
+          <td class="paramtype">Array&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ordena de forma creciente los elementos del array a en O(n^2) o inferior, donde n es ArrayTam(a). </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>El array. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac99562d37f146243894d783998f3148d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ArrayRecupera </td>
+          <td>(</td>
+          <td class="paramtype">Array&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Devuelve el entero e que ocupa el índice i del array a. </p>
+<dl class="section pre"><dt>Precondición</dt><dd>1&lt;=i&lt;=ArrayTam(a) </dd></dl>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>El array. </td></tr>
+    <tr><td class="paramname">i</td><td>El indice </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ad9d77c7eb700591581f5573399cd630e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ArrayTam </td>
+          <td>(</td>
+          <td class="paramtype">Array&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Devuelve el tamaño del array a. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>El array. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a19765ddb84d15a00872f85923a050f11"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int leeEnteroError </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Comprueba si hay algun error al leer de un fichero y si no hay error lee los enteros. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>El fichero. </td></tr>
+    <tr><td class="paramname">n</td><td>Donde se almacena el entero. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Miércoles, 10 de Abril de 2013 15:16:55 para TPBloqueI por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.3.1
+</small></address>
+</body>
+</html>
